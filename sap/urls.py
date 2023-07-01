@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from factura.views import agregar_factura, ver_factura, editar_factura, eliminar_factura
+from factura.views import agregar_factura, ver_factura, editar_factura, eliminar_factura,generar_reporte
 from webapp.views import ver_facturas
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +24,6 @@ urlpatterns = [
     path('agregar_factura/', agregar_factura),
     path('ver_factura/<int:idFactura>', ver_factura),
     path('editar_factura/<int:idFactura>', editar_factura),
-    path('eliminar_factura/<int:idFactura>', eliminar_factura)
+    path('eliminar_factura/<int:idFactura>', eliminar_factura),
+    path('generar_reporte/', generar_reporte)
 ]
