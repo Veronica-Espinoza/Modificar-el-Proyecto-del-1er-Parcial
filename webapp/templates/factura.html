@@ -50,6 +50,9 @@
             <tr>
                 <th>Codigo_Factura</th>
                 <th>Fecha</th>
+                <th>Ruc</th>
+                <th>Proveedor</th>
+                 <th>Direcion</th>
                 <th>Cedula</th>
                 <th>Nombre</th>
                 <th>Apellido</th>
@@ -64,6 +67,9 @@
                     <tr>
                         <td>{{factura.id}}</td>
                         <td>{{factura.fecha}}</td>
+                        <td>{{factura.proveedores.ruc}}</td>
+                        <td>{{factura.proveedores.nombre}}</td>
+                        <td>{{factura.proveedores.direccion}}</td>
                         <td>{{factura.cliente.cedula}}</td>
                         <td>{{factura.cliente.nombre}}</td>
                         <td>{{factura.cliente.apellido}}</td>
